@@ -70,7 +70,7 @@
       register: api_available_output
       until: api_available_output.stdout == 'ok'
       retries: 120
-      delay: 1
+      delay: 5
       changed_when: false
 
     - name: Start and enable node dep

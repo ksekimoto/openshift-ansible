@@ -45,7 +45,7 @@
     register: api_available_output
     until: api_available_output.stdout == 'ok'
     retries: 120
-    delay: 1
+    delay: 5
     changed_when: false
 
 - include: ../openshift-master/set_network_facts.yml
